@@ -8,7 +8,7 @@ import type {
 export class AuthentiqioApi implements ICredentialType {
 	name = 'N8nDevAuthentiqioApi';
 
-	displayName = 'authentiqio API';
+	displayName = 'Authentiqio API';
 
 	icon: Icon = { light: 'file:../nodes/Authentiqio/authentiqio.svg', dark: 'file:../nodes/Authentiqio/authentiqio.dark.svg' };
 
@@ -22,7 +22,7 @@ export class AuthentiqioApi implements ICredentialType {
 			default: 'https://6-dot-authentiqio.appspot.com',
 			required: true,
 			placeholder: 'https://6-dot-authentiqio.appspot.com',
-			description: 'The base URL of your authentiqio API server',
+			description: 'The base URL of your Authentiqio API server',
 		},
 		{
 			displayName: 'API Key',

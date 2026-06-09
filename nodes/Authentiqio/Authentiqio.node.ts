@@ -10,14 +10,14 @@ import { scopeDescription } from './resources/scope';
 
 export class Authentiqio implements INodeType {
 	description: INodeTypeDescription = {
-		displayName: 'authentiqio',
+		displayName: 'Authentiqio',
 		name: 'N8nDevAuthentiqio',
 		icon: { light: 'file:./authentiqio.svg', dark: 'file:./authentiqio.dark.svg' },
 		group: ['input'],
 		version: 1,
 		subtitle: '={{\$parameter["operation"] + ": " + \$parameter["resource"]}}',
-		description: 'Strong authentication, without the passwords.',
-		defaults: { name: 'authentiqio' },
+		description: 'Passwordless strong authentication.',
+		defaults: { name: 'Authentiqio' },
 		usableAsTool: true,
 		inputs: [NodeConnectionTypes.Main],
 		outputs: [NodeConnectionTypes.Main],

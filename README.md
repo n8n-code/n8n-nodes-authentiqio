@@ -53,16 +53,81 @@ That's it. No configuration files. No code. It just works.
 
 ## Resources
 
-| Resource | Operations |
-|----------|------------|
-| Key | Delete key revoke nosecret, Post key register, Delete key revoke, Get key retrieve, Head key, Post key update, Put key bind |
-| Delete | Delete key revoke nosecret, Delete key revoke, Delete sign delete |
-| Post | Post key register, Post key update, Post push login request, Post sign request, Post sign confirm |
-| Get | Get key retrieve, Get sign retrieve |
-| Head | Head key, Head sign retrieve head |
-| Put | Put key bind, Put sign update |
-| Login | Post push login request |
-| Scope | Post sign request, Delete sign delete, Get sign retrieve, Head sign retrieve head, Post sign confirm, Put sign update |
+<details>
+<summary><b>Key</b> (7 operations)</summary>
+
+- Delete Key Revoke Nosecret
+- Post Key Register
+- Delete Key Revoke
+- Get Key Retrieve
+- Head Key
+- Post Key Update
+- Put Key Bind
+
+</details>
+
+<details>
+<summary><b>Delete</b> (3 operations)</summary>
+
+- Delete Key Revoke Nosecret
+- Delete Key Revoke
+- Delete Sign Delete
+
+</details>
+
+<details>
+<summary><b>Post</b> (5 operations)</summary>
+
+- Post Key Register
+- Post Key Update
+- Post Push Login Request
+- Post Sign Request
+- Post Sign Confirm
+
+</details>
+
+<details>
+<summary><b>Get</b> (2 operations)</summary>
+
+- Get Key Retrieve
+- Get Sign Retrieve
+
+</details>
+
+<details>
+<summary><b>Head</b> (2 operations)</summary>
+
+- Head Key
+- Head Sign Retrieve Head
+
+</details>
+
+<details>
+<summary><b>Put</b> (2 operations)</summary>
+
+- Put Key Bind
+- Put Sign Update
+
+</details>
+
+<details>
+<summary><b>Login</b> (1 operations)</summary>
+
+- Post Push Login Request
+
+</details>
+
+<details>
+<summary><b>Scope</b> (6 operations)</summary>
+
+- Post Sign Request
+- Delete Sign Delete
+- Get Sign Retrieve
+- Head Sign Retrieve Head
+- Post Sign Confirm
+- Put Sign Update
+
+</details>
 
 ---
 
