@@ -9,32 +9,32 @@ import { loginDescription } from './resources/login';
 import { scopeDescription } from './resources/scope';
 
 export class Authentiqio implements INodeType {
-	description: INodeTypeDescription = {
-		displayName: 'Authentiqio',
-		name: 'N8nDevAuthentiqio',
-		icon: { light: 'file:./authentiqio.svg', dark: 'file:./authentiqio.dark.svg' },
-		group: ['input'],
-		version: 1,
-		subtitle: '={{\$parameter["operation"] + ": " + \$parameter["resource"]}}',
-		description: 'Passwordless strong authentication.',
-		defaults: { name: 'Authentiqio' },
-		usableAsTool: true,
-		inputs: [NodeConnectionTypes.Main],
-		outputs: [NodeConnectionTypes.Main],
-		credentials: [
-			{
-				name: 'N8nDevAuthentiqioApi',
-				required: true,
-			},
-		],
-		requestDefaults: {
-			baseURL: '={{\$credentials.url}}',
-			headers: {
-				Accept: 'application/json',
-				'Content-Type': 'application/json',
-			},
-		},
-		properties: [
+        description: INodeTypeDescription = {
+                displayName: 'Authentiqio',
+                name: 'N8nDevAuthentiqio',
+                icon: { light: 'file:./authentiqio.svg', dark: 'file:./authentiqio.dark.svg' },
+                group: ['input'],
+                version: 1,
+                subtitle: '={{\$parameter["operation"] + ": " + \$parameter["resource"]}}',
+                description: 'Passwordless strong authentication.',
+                defaults: { name: 'Authentiqio' },
+                usableAsTool: true,
+                inputs: [NodeConnectionTypes.Main],
+                outputs: [NodeConnectionTypes.Main],
+                credentials: [
+                        {
+                                name: 'N8nDevAuthentiqioApi',
+                                required: true,
+                        },
+                ],
+                requestDefaults: {
+                        baseURL: '={{\$credentials.url}}',
+                        headers: {
+                                Accept: 'application/json',
+                                'Content-Type': 'application/json',
+                        },
+                },
+                properties: [
 		{
 			"displayName": "Resource",
 			"name": "resource",
@@ -92,6 +92,6 @@ export class Authentiqio implements INodeType {
 		...putDescription,
 		...loginDescription,
 		...scopeDescription
-		],
-	};
+                ],
+        };
 }
